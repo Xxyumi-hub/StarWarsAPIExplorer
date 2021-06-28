@@ -1,10 +1,6 @@
 function showFilmsTitle(dataObjects) {
     const dataDiv = document.querySelector('#films-page')
         for (let key in dataObjects) {
-            console.log(key) //ID for each object
-            console.log(dataObjects) //array of objeccts
-            console.log(dataObjects[key]) //single object
-
             const filmsName = document.createElement('p')
             filmsName.innerText= `Title: ${dataObjects[key].title}`
 

@@ -1,10 +1,6 @@
 function showDataName(dataObjects) {
     const dataDiv = document.querySelector('#people-page')
         for (let key in dataObjects) {
-            console.log(key) //ID for each object
-            console.log(dataObjects) //array of objects
-            console.log(dataObjects[key]) //single object
-
             const personName = document.createElement('p')
             personName.innerText= `Name: ${dataObjects[key].name}`
 

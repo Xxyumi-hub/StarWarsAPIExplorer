@@ -1,10 +1,6 @@
 function showDataName(dataObjects) {
     const dataDiv = document.querySelector('#starships-page')
         for (let key in dataObjects) {
-            console.log(key) //ID for each object
-            console.log(dataObjects) //array of objects
-            console.log(dataObjects[key]) //single object
-    
             const starship = document.createElement('p')
             starship.innerText= `Name: ${dataObjects[key].name}`
 
@@ -26,8 +22,6 @@ function showDataName(dataObjects) {
             const starshipLink = document.createElement('a')
             starshipLink.setAttribute('href', dataObjects[key].url)
             starshipLink.innerText = `Starship URL: ${dataObjects[key].name}`
-
-               
 
             dataDiv.append(starship)
             dataDiv.append(starshipModel)
