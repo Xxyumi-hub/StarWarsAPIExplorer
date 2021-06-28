@@ -16,6 +16,10 @@ small {
     width: 100%;
 } 
 
+.navbar a:hover{
+    color: rgb(228, 224, 0);
+} 
+
 h1 {
     margin: 20px;
 }
