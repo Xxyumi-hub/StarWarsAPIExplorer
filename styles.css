@@ -1,0 +1,143 @@
+body {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+small {
+    font-size: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    overflow:hidden;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+} 
+
+h1 {
+    margin: 20px;
+}
+
+li {
+    display: inline;
+    margin: 20px; 
+    font-size: 1.2em;
+}
+
+li a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.hero-image {
+    background-image: url('https://lumiere-a.akamaihd.net/v1/images/og-generic_02031d2b.png?region=0%2C0%2C1200%2C1200');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+}
+
+#home-page-container {
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+
+#home-people {
+    width: 33%;
+    margin-top: 40px;
+}
+
+#home-people h2:hover, #home-films h2:hover, #home-starships h2:hover, h3:hover {
+    color: rgb(228, 224, 0);
+}
+
+#home-people img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+#home-films {
+    width: 33%;
+    margin-top: 160px;
+}
+
+#home-films img {
+    width: 410px;
+    border-radius: 50%;
+}
+
+#home-starships {
+    width: 33%;
+    margin-top: 100px;
+}
+
+#home-starships img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+#home-people a, #home-films a, #home-starships a {
+    text-decoration-color: black;
+}
+
+#people-page, #films-page, #starships-page, #vehicles-page , #species-page, #planets-page {
+    border: 1px solid white;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+#home-page-container {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home-people {
+    width: 33%;
+    margin-top: 40px;
+}
+
+#home-people img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+#home-films {
+    width: 33%;
+    margin-top: 40px;
+}
+
+#home-films img {
+    width: 310px;
+    border-radius: 40%;
+}
+
+#home-starships {
+    width: 33%;
+    margin-top: 40px;
+}
+
+#home-starships img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+}
