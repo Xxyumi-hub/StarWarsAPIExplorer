@@ -1,2 +1,4 @@
+This is a web application built using HTML, CSS and Javascript. It fetches data from the Star Wars API at https://swapi.dev/ and displays the data on the appropriate pages.
+
 To run the web application:
-Double-click the index.html file to open it in browser and navigate the Star Wars API
+Download the ZIP folder and double-click the index.html file to open it in browser and navigate the Star Wars API
