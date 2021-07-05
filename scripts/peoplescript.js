@@ -25,6 +25,13 @@ function showDataName(dataObjects) {
             dataDiv.append(personBirthYear)
             dataDiv.append(personLink)
 
+            const filmsArray = dataObjects[key].films
+            filmsArray.forEach(film => {
+                const filmElement = document.createElement('a')
+                filmElement.setAttribute('href', film)
+                filmElement.innerText = `Films: ${film}\n`
+                dataDiv.append(filmElement)
+            })
         }
     
 }

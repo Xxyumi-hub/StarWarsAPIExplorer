@@ -18,15 +18,30 @@ function showFilmsTitle(dataObjects) {
 
             const filmsURL = document.createElement('a')
             filmsURL.setAttribute('href', dataObjects[key].url)
-            filmsURL.innerText = `URL for the film: ${dataObjects[key].title}`
+            filmsURL.innerText = `URL for the film: ${dataObjects[key].title}\n`
 
             dataDiv.append(filmsName)
             dataDiv.append(filmsDirector)
             dataDiv.append(filmsProducer)
             dataDiv.append(filmsEpisodeId)
             dataDiv.append(filmsOpeningCrawl)
-
             dataDiv.append(filmsURL)
+
+            const charactersArray = dataObjects[key].characters
+            charactersArray.forEach(character => {
+                const charactersElement = document.createElement('a')
+                charactersElement.setAttribute('href', character)
+                charactersElement.innerText = `Character: ${character}\n`
+                dataDiv.append(charactersElement)
+            })
+
+            const starshipsArray = dataObjects[key].starships
+            starshipsArray.forEach(starship => {
+                const starshipElement = document.createElement('a')
+                starshipElement.setAttribute('href', starship)
+                starshipElement.innerText = `Starship: ${starship}\n`
+                dataDiv.append(starshipElement)
+            })
 
         }
     

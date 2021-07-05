@@ -19,7 +19,7 @@ function showDataName(dataObjects) {
             //this is the planet URLs
             const planetLink = document.createElement('a')
             planetLink.setAttribute('href', dataObjects[key].url)
-            planetLink.innerText = `URL for the planet: ${dataObjects[key].name}`
+            planetLink.innerText = `URL for the planet: ${dataObjects[key].name}\n`
 
             dataDiv.append(planetName)
             dataDiv.append(planetClimate)
@@ -27,6 +27,14 @@ function showDataName(dataObjects) {
             dataDiv.append(planetPopulation)
             dataDiv.append(planetTerrain)
             dataDiv.append(planetLink)
+
+            const residentsArray = dataObjects[key].residents
+            residentsArray.forEach(resident => {
+                const residentElement = document.createElement('a')
+                residentElement.setAttribute('href', resident)
+                residentElement.innerText = `Residents: ${resident}\n`
+                dataDiv.append(residentElement)
+            })
 
         }
     
